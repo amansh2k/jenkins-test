@@ -1,11 +1,12 @@
 {
   "name": "jenkins-test-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Node.js app for Jenkins and Azure App Service deployment",
+  "main": "app.js",
   "scripts": {
     "test": "node --test",
-    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true}); require('fs').copyFileSync('app.js','dist/app.js')\""
+    "build": "node -e \"require('fs').mkdirSync('dist',{recursive:true}); require('fs').copyFileSync('app.js','dist/app.js')\"",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
